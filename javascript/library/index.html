@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="yourlibraryTitle">Your Library</h1>
+    </header>
+    <hr>
+    <div id="shelf">
+        <button id="addButton" class="card">
+            +
+        </button>
+
+    </div>
+    <dialog>
+        <div id="dialogContents">
+            <button id="closeButton" type="button">X</button>
+            <div>
+                <h2>Add a book</h2>
+            </div>
+            <form id="addBookForm">
+                <div class="form-row">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" min="1" required>
+                </div>
+
+                <div class="form-row">
+                    <label>Read:</label>
+                    <label>
+                        <input type="radio" id="agreeYes" name="agree" value="yes" required>
+                        Yes
+                      </label>
+
+                      <label>
+                        <input type="radio" id="agreeNo" name="agree" value="no">
+                        No
+                      </label>
+                </div>
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </dialog>
+</body>
+</html>

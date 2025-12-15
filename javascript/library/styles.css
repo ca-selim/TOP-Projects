@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #121212;
+    font-family: 'Merriweather', Georgia, serif;
+    margin-bottom: 150px;
+}
+
+h1, h2{
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    margin-top: 30px;
+}
+
+#yourlibraryTitle{
+    font-size: 60px;
+    color: white;
+}
+
+#addButton{
+    font-size: 100px;
+    color: #28A745
+}
+
+#dialogContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.read-dropdown{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+}
+
+.read-dropdown option {
+    color: black;
+    background-color: white;
+}
+
+.bookcardDelete{
+    padding: 15px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.bookcardDelete button{
+    padding: 3px;
+    all: unset;
+    color: #B22222;
+    font-size: 20px;
+}
+
+#closeButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    transition: color 0.2s;
+}
+
+#closeButton:hover {
+    color: darkred;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+
+
+dialog{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 600px;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+#addBookForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-row label {
+    flex: 0 0 60px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-row input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+#submitButton {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    align-self: flex-end;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: #218838;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    opacity: 0.3;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: #2c2c2c
+}
+
+.book-card {
+    width: 300px;
+    height: 500px;
+    background-color: #2c2c2c;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 8px;
+  }
+
+.book-card #bookcardContent{
+    padding: 15px;
+}
+
+.book-card h1{
+    font-size: 33px;
+}
+
+.book-card #bookcardAuthor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.book-card #bookcardPages{
+    font-size: 13px;
+}
+
+#filler{
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+#shelf{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
