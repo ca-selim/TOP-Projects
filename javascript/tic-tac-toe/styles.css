@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #121212;
+    font-family: 'JetBrains Mono';
+    margin-bottom: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameTitle{
+    color: white;
+}
+
+.gameContainer {
+    margin-top: 30px;
+    background-color: #2d2d2d;
+    width: 600px;              
+    height: 600px;             
+    max-width: 90vw;           
+    aspect-ratio: 1 / 1;       
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.playerNamesContainer{
+    color: white;
+}
+
+.gameControls{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    width: 600px;
+    margin-top: 30px;
+}
+
+#restartButton{
+    color: #007BFF;
+    height: 50px;
+    width: 150px;
+    background-color: #2c2c2c;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#gameResults{
+    color: white;
+    align-self: center;
+}
+
+.cell {
+    background-color: #3a3a3a; 
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #4a4a4a; 
+}
