@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <h1 class="title">Menu</h1>
+            <hr>
+            <div id="listsContainer">
+                <h3>LISTS</h3>
+                <ul class="list">
+                    <li class="listItem">Default List</li>
+                </ul>
+            </div>
+            <div id="projectFormContainer">
+                <form id="project-form" class="hidden">
+                    <input
+                    type="text"
+                    id="project-input"
+                    placeholder="New list name"
+                    required
+                    />
+                </form>
+                <button class="complete hidden">✓</button>
+                <button class="delete hidden">✕</button>
+            </div>
+ 
+            <button id="addListBtn">+ Add New List</button>
+        </div>
+        <div id="todoPage">
+            <h1 class="listTitle">Placeholder</h1>
+            <div class="tasksContainer">
+                <label class="task">
+                    <div class="top-row">
+                        <input type="checkbox">
+                        <span class="title">Task title</span>
+                    </div>
+
+                    <div class="meta">
+                        <span class="due-date">Due: 2026-01-24</span>
+                        <span class="priority">Priority: Low</span>
+                    </div>
+                </label>
+            </div>
+            <button id="addTaskBtn">+ Add New Task</button>
+        </div>
+
+
+        <div id="taskDetails" class="hidden">
+            <h1>Task Details</h1>
+            <form>
+                <input type="text" id="taskName" name="taskName" placeholder="Enter task name">
+                <textarea id="taskDescription" name="taskDescription" placeholder="Enter task description"></textarea>
+                <div class="row">
+                    <label for="due-date">Due date</label>
+                    <input type="date" id="due-date" name="dueDate">
+                </div>
+                <div class="row">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="deleteTaskBtn" type="button">Delete Task</button>
+                    <button id="saveTaskBtn" type="button">Save Task</button>
+                </div>
+            </form>
+         </div>
+    </div>
+
+</body>
+</html>

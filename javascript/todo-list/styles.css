@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --space-xs: 0.25rem; /* 4px */
+  --space-sm: 0.5rem;  /* 8px */
+  --space-md: 1rem;    /* 16px */
+  --space-lg: 1.5rem;  /* 24px */
+  --space-xl: 2rem;    /* 32px */
+}
+
+#menu {
+  background-color: #f5f5f5;
+  max-height: 100vh;
+  width: 20%;
+  margin: var(--space-lg);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#taskDetails{
+  background-color: #f5f5f5;
+  max-height: 100vh;
+  width: 35%;
+  margin: var(--space-lg);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+#todoPage{
+  height: 100vh;
+  width: 45%;
+}
+
+#menu .title{
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: var(--space-lg);
+}
+
+#taskDetails h1{
+    margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: var(--space-lg);
+}
+
+#listsContainer h3{
+  margin: 0;
+  padding: var(--space-lg);
+  padding-bottom: 0;
+}
+
+hr{
+  margin: 0;
+}
+
+li{
+  margin-top: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+#project-form {
+  padding-left: var(--space-lg);
+}
+
+#project-input {
+  width: 9rem;
+  padding: var(--space-sm);
+  font-size: 14px;
+}
+
+#projectFormContainer{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+    margin-bottom: var(--space-md);
+
+}
+
+ul li::marker {
+  font-size: 1.5rem;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+.complete {
+  color: #4caf50;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete {
+  color: #e53935;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list{
+  margin-left: var(--space-md);
+}
+
+#taskDetails input, textarea, select{
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+
+#taskDetails form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: 0px var(--space-lg);
+}
+
+
+.row{
+  display: grid;
+  grid-template-columns: 120px 150px; 
+  align-items: center;
+}
+
+.row input,
+.row select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tasksContainer{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-size: 1.3rem;
+}
+
+
+input[type="checkbox"] {
+  transform: scale(1.15);
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.listItem{
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 36px;
+}
